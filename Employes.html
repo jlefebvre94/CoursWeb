@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gestion des employés</title>
+    <!-- Ajout de mon css via less  -->
+    <link rel="stylesheet" href="./css/employes.css">
+    <!-- Ajout du CSS de bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Ajout de Font Awesome -->
+    <link rel="stylesheet" href=".\css\font-awesome.css">
+    <link rel="stylesheet" href=".\css\font-awesome.min.css">
+    <!-- Ajout de Animate -->
+    <link rel="stylesheet" href=".\css\animate.css">
+  </head>
+  <body>
+    <h1>Gestion des employés</h1>
+
+    <br><br>
+    <!-- Formulaire de saisi -->
+    <div class="formulaire">
+      <div class="container">
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="nom">Nom Complet : </label>
+            <input type="text" name="nom" placeholder="Les nom et prénom" id="nom">
+          </div>
+          <div class="form-group">
+            <label for="salaire">Salaire : </label>
+            <input type="number" name="salaire" placeholder="Le salaire" id="salaire">
+          </div>
+          <div class="form-group">
+            <label for="poste">Poste : </label>
+            <input type="text" name="poste" placeholder="Poste occupé" id="poste">
+          </div>
+          <div class="checkbox">
+            <label for="manager">
+              <input type="checkbox" name="manager" value="false" id="manager">Manager ?
+            </label>
+          </div>
+          <div class="form-group">
+            <label>
+              <button type="submit" name="js-button-send" id="js-button-send">Envoyer</button>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <br><br>
+    <!-- Entete du tableau généré  -->
+    <div class="tableau">
+      <div class="container">
+        <table class="table" id="table-employes">
+          <thead>
+            <tr>
+              <th>Nom</th>
+              <th>Prenom</th>
+              <th>Salaire</th>
+              <th>Poste</th>
+              <th>Manager</th>
+              <th>Suppression</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+
+    <!-- Ajout du javascript de JQery et bootstrap -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Ajout de mon fichier javascript -->
+    <script type="text/javascript" src="./js/employes.js"></script>
+  </body>
+</html>
